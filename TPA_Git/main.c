@@ -25,7 +25,7 @@ int main()
         printf("15 - Sair\n");
         scanf("%i", &op);
         switch(op){
-            case 9: break;
+            case 15: break;
             case 1:
 
                     break;
@@ -68,9 +68,9 @@ int main()
             case 14:
 
                     break;
-            case 15:
+            default:
 
-                    break;
+                    printf("Insira um valor válido entre 1 e 15\n");
         }
     }while(op!=15);
 }
