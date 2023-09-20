@@ -28,8 +28,22 @@ void areaCirculo(){
             printf("O raio deve ser maior que 0. Tenta outravez amigo!.\n");
         }
     } while (r <= 0);
-    printf(" A Área do círculo é %.2f\n", PI*r*r);
+    printf(" A ï¿½rea do cï¿½rculo ï¿½ %.2f\n", PI*r*r);
 }
+
+
+int areaTriangulo()
+{
+    float b, a, op;
+   printf("\nInsira o valor da base:\n");
+   scanf("%f", &b);
+   printf("\nInsira o valor do altura:\n");
+   scanf ("%f",&a) ;
+   op=(b*a)/2;
+
+    return op;
+}
+
 
 
 int main()
@@ -40,20 +54,20 @@ int main()
     setlocale(LC_ALL, "Portuguese");
     do{
         printf(">>>> MENU TRIGONOMETRIA <<<<\n");
-        printf("1 - Calcular área do circulo\n");
-        printf("2 - Calcular área do quadrado\n");
-        printf("3 - Calcular área do retângulo\n");
-        printf("4 - Calcular área do triângulo\n");
-        printf("5 - Calcular área da esfera\n");
-        printf("6 - Calcular perímetro do circulo\n");
-        printf("7 - Calcular perímetro do retângulo\n");
-        printf("8 - Calcular perímetro do triângulo\n");
-        printf("9 - Calcular perímetro do octagono\n");
-        printf("10 - Calcular quadrado de um número\n");
-        printf("11 - Calcular cubo de um número\n");
-        printf("12 - Calcular potência de um número\n");
-        printf("13 - Multiplicação de 2 números\n");
-        printf("14 - Soma de 2 números\n");
+        printf("1 - Calcular ï¿½rea do circulo\n");
+        printf("2 - Calcular ï¿½rea do quadrado\n");
+        printf("3 - Calcular ï¿½rea do retï¿½ngulo\n");
+        printf("4 - Calcular ï¿½rea do triï¿½ngulo\n");
+        printf("5 - Calcular ï¿½rea da esfera\n");
+        printf("6 - Calcular perï¿½metro do circulo\n");
+        printf("7 - Calcular perï¿½metro do retï¿½ngulo\n");
+        printf("8 - Calcular perï¿½metro do triï¿½ngulo\n");
+        printf("9 - Calcular perï¿½metro do octagono\n");
+        printf("10 - Calcular quadrado de um nï¿½mero\n");
+        printf("11 - Calcular cubo de um nï¿½mero\n");
+        printf("12 - Calcular potï¿½ncia de um nï¿½mero\n");
+        printf("13 - Multiplicaï¿½ï¿½o de 2 nï¿½meros\n");
+        printf("14 - Soma de 2 nï¿½meros\n");
         printf("15 - Sair\n");
         scanf("%i", &op);
         switch(op){
@@ -102,7 +116,7 @@ int main()
                     break;
             default:
 
-                    printf("Insira um valor válido entre 1 e 15\n");
+                    printf("Insira um valor vï¿½lido entre 1 e 15\n");
         }
     }while(op!=15);
 
