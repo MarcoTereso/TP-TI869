@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1695223421 source:c:\users\abarbosa\desktop\gitstor\tp-ti869\tpa_git\main.c
+	<stdio.h>
+	<stdlib.h>
+
