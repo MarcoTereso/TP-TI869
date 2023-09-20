@@ -4,8 +4,6 @@
 
 
 
-//DEFINE PI 3.14.15
-
 void areaEsfera(){
 
     float raio, area;
