@@ -6,6 +6,17 @@
 
 
 
+float calcularQuadradoNum(float num1, float num2)
+{
+    printf("Insira o primeiro número: ");
+    scanf("%f", &num1);
+    printf("Insira o segundo número: ");
+    scanf("%f", &num2);
+    float quadrado = num1 * num2;
+    printf("O quadrado de %.2f * %.2f = %.2f\n", num1, num2, quadrado);
+    return quadrado;
+}
+
 void calculoMulti();
 
 
@@ -131,7 +142,7 @@ int main()
 
                     break;
             case 10:
-
+                    calcularQuadradoNum(v1,v2);
                     break;
             case 11:
 
