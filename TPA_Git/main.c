@@ -10,7 +10,21 @@ void areaEsfera()
 
 
 <<<<<<< HEAD
+float calcularQuadradoNum(float num1, float num2)
+{
+    printf("Insira o primeiro número: ");
+    scanf("%f", &num1);
+    printf("Insira o segundo número: ");
+    scanf("%f", &num2);
+    float quadrado = num1 * num2;
+    printf("O quadrado de %.2f * %.2f = %.2f\n", num1, num2, quadrado);
+    return quadrado;
+}
+
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
 void calculoMulti();
 
 
@@ -246,8 +260,13 @@ void perimetroTriangulo()
                 case 9:
 
                     break;
+<<<<<<< HEAD
                 case 10:
 
+=======
+            case 10:
+                    calcularQuadradoNum(v1,v2);
+>>>>>>> 9aa378004b045787e28da322d85494f370cad0b8
                     break;
                 case 11:
 
