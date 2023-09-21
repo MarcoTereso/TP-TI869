@@ -17,7 +17,7 @@ void areaEsfera(){
     area = 4*PI*raio;
 
     printf("\nArea da esfera : %.2f", raio);
-
+}
 
 void areaCirculo(){
     float r;
