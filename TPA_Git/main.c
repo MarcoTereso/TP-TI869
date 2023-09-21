@@ -84,9 +84,9 @@ void potencia()
     printf("Potência: ");
     scanf("%d", &power);
     if (value == 0 && power == -1)
-        printf("Entrada inválida!");
+        printf("Entrada inválida!\n");
     else
-        printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
+        printf("%.6f ^ %d = %.6f\n", value, power, math_pow(value, power));
 }
 
 void perimetroTriangulo()
@@ -183,7 +183,7 @@ int main()
 
                     break;
             case 12:
-
+                    potencia();
                     break;
             case 13:
                     calculoMulti();
