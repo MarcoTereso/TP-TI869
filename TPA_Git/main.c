@@ -96,6 +96,7 @@ void areaCirculo()
 }
 
 void f_cubo()
+//feito pelo Felipe
 {
     float v1;
     int verifica;
