@@ -30,7 +30,8 @@ float calcularQuadradoNum(float num1, float num2)
 void calculoMulti();
 
 void areaEsfera()
-{ // CASE 5
+{
+    // CASE 5
 
     float raio, area;
 
@@ -43,7 +44,8 @@ void areaEsfera()
         if (raio <= 0)
             printf("\nO valor do raio nao pode ser igual ou inferior a 0.");
 
-    } while (raio <= 0);
+    }
+    while (raio <= 0);
 }
 
 void areaCirculo()
@@ -57,9 +59,25 @@ void areaCirculo()
         {
             printf("O raio deve ser maior que 0. Tenta outravez amigo!.\n");
         }
-    } while (r <= 0);
+    }
+    while (r <= 0);
     printf(" A área do círculo é %.2f\n", PI * r * r);
 }
+
+void f_cubo()
+{
+    float v1;
+    int verifica;
+    do
+    {
+        fflush(stdin);
+        printf("Digite o valor a ser elevado ao cubo\n");
+        verifica=scanf("%f",&v1);
+    }
+    while (verifica!=1);
+    printf("%.2f elevado ao cubo é = %.2f",v1,(v1*v1*v1));
+}
+
 void potencia()
 {
     float value, power;
@@ -82,19 +100,22 @@ void perimetroTriangulo()
     {
         fflush(stdin);
         verifica = scanf("%f", &b);
-    } while (verifica != 1 || b <= 0);
+    }
+    while (verifica != 1 || b <= 0);
     printf("Insira o primeiro lado: ");
     do
     {
         fflush(stdin);
         verifica = scanf("%f", &l1);
-    } while (verifica != 1 || l1 <= 0);
+    }
+    while (verifica != 1 || l1 <= 0);
     printf("Insira o segundo lado: ");
     do
     {
         fflush(stdin);
         verifica = scanf("%f", &l2);
-    } while (verifica != 1 || l2 <= 0);
+    }
+    while (verifica != 1 || l2 <= 0);
     printf("Per�metro do tri�ngulo � %f", (b + l1 + l2));
 }
 
@@ -169,13 +190,12 @@ int main()
             break;
         case 4:
             areaTriangulo();
-
             break;
         case 5:
             areaEsfera();
             break;
         case 6:
-
+            perimetroCirculo();
             break;
         case 7:
             perimetroRetangulo();
@@ -192,7 +212,7 @@ int main()
 
             break;
         case 11:
-
+            f_cubo();
             break;
         case 12:
             potencia();
@@ -209,7 +229,8 @@ int main()
         default:
             printf("Insira um valor v�lido entre 1 e 15\n");
         }
-    } while (op != 15);
+    }
+    while (op != 15);
     return 0;
 }
 
@@ -225,14 +246,16 @@ void calculoMulti()
         fflush(stdin);
         printf("Insira o 1� valor: ");
         dec = scanf("%f", &v1);
-    } while (dec != 1 || v1 <= 0);
+    }
+    while (dec != 1 || v1 <= 0);
     do
     {
         fflush(stdin);
         printf("Insira o 2� valor: ");
         dec = scanf("%f", &v2);
 
-    } while (v2 <= 0 || dec != 1);
+    }
+    while (v2 <= 0 || dec != 1);
 
     multi = v1 * v2;
 
