@@ -101,6 +101,7 @@ void areaTriangulo(){
             printf("\nInsira o valor do altura:\n");
             scanf("%f", &a);
             op = (b * a) / 2;
+            printf ("A area do Triângulo é de :%.3f \n ",op );
 }
 
 
@@ -150,6 +151,7 @@ int main(){
                         calcularAreaRetangulo();
                         break;
                     case 4:
+                    areaTriangulo();
 
                         break;
                     case 5:
