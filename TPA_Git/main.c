@@ -6,6 +6,7 @@
 
 
 
+<<<<<<< HEAD
 float calcularQuadradoNum(float num1, float num2)
 {
     printf("Insira o primeiro número: ");
@@ -17,10 +18,15 @@ float calcularQuadradoNum(float num1, float num2)
     return quadrado;
 }
 
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
 void calculoMulti();
 
 
 
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 void areaEsfera(){
 
     float raio, area;
@@ -34,7 +40,10 @@ void areaEsfera(){
     printf("\nArea da esfera : %.2f", raio);
 }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 void areaCirculo(){
     float r;
     do {
@@ -87,6 +96,34 @@ void potencia()
     else
         printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
 }
+<<<<<<< HEAD
+
+void perimetroTriangulo()
+{
+    int verifica;
+    float b, l1, l2;
+    printf("Insira a base: ");
+    do
+    {
+        fflush(stdin);
+        verifica=scanf("%f", &b);
+    }while(verifica!=1 || b<=0);
+    printf("Insira o primeiro lado: ");
+    do
+    {
+        fflush(stdin);
+        verifica=scanf("%f", &l1);
+    }while(verifica!=1 || l1<=0);
+    printf("Insira o segundo lado: ");
+    do
+    {
+        fflush(stdin);
+        verifica=scanf("%f", &l2);
+    }while(verifica!=1 || l2<=0);
+    printf("Perímetro do triângulo é %f",(b+l1+l2));
+}
+=======
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 
 int main()
 {
@@ -151,7 +188,11 @@ int main()
 
                     break;
             case 13:
+<<<<<<< HEAD
+
+=======
                     calculoMulti();
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
                     break;
             case 14:
 
@@ -162,6 +203,8 @@ int main()
         }
     }while(op!=15);
 
+<<<<<<< HEAD
+=======
 }
 
 
@@ -187,4 +230,5 @@ void calculoMulti(){
 
     printf("Resultado: %.2f",multi);
 
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 }
