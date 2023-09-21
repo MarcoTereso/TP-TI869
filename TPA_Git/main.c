@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define PI 3.1415
+#include <locale.h>
 
+#define PI 3.1415
 
 
 
@@ -20,7 +21,7 @@ void areaEsfera(){
     area = 4*PI*raio;
 
     printf("\nArea da esfera : %.2f", raio);
-
+}
 
 
 void areaCirculo(){
@@ -32,7 +33,7 @@ void areaCirculo(){
             printf("O raio deve ser maior que 0. Tenta outravez amigo!.\n");
         }
     } while (r <= 0);
-    printf(" A �rea do c�rculo � %.2f\n", PI*r*r);
+    printf(" A área do círculo é %.2f\n", PI*r*r);
 }
 
 
@@ -48,7 +49,33 @@ int areaTriangulo()
     return op;
 }
 
+float math_pow(float value, int power)
+{
+    if (power < 0)
+        return 1.0f / math_pow(value, -power);
+    else if (power == 0)
+        return 1;
+    else
+    {
+        float res = value;
+        while (--power) res *= value;
+        return res;
+    }
+}
 
+void potencia()
+{
+    float value;
+    int power;
+    printf("Valor: ");
+    scanf("%f", &value);
+    printf("Potência: ");
+    scanf("%d", &power);
+    if (value == 0 && power == -1)
+        printf("Entrada inválida!");
+    else
+        printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
+}
 
 int main()
 {
@@ -58,20 +85,20 @@ int main()
     setlocale(LC_ALL, "Portuguese");
     do{
         printf(">>>> MENU TRIGONOMETRIA <<<<\n");
-        printf("1 - Calcular �rea do circulo\n");
-        printf("2 - Calcular �rea do quadrado\n");
-        printf("3 - Calcular �rea do ret�ngulo\n");
-        printf("4 - Calcular �rea do tri�ngulo\n");
-        printf("5 - Calcular �rea da esfera\n");
-        printf("6 - Calcular per�metro do circulo\n");
-        printf("7 - Calcular per�metro do ret�ngulo\n");
-        printf("8 - Calcular per�metro do tri�ngulo\n");
-        printf("9 - Calcular per�metro do octagono\n");
-        printf("10 - Calcular quadrado de um n�mero\n");
-        printf("11 - Calcular cubo de um n�mero\n");
-        printf("12 - Calcular pot�ncia de um n�mero\n");
-        printf("13 - Multiplica��o de 2 n�meros\n");
-        printf("14 - Soma de 2 n�meros\n");
+        printf("1 - Calcular área do circulo\n");
+        printf("2 - Calcular área do quadrado\n");
+        printf("3 - Calcular área do retângulo\n");
+        printf("4 - Calcular área do triângulo\n");
+        printf("5 - Calcular área da esfera\n");
+        printf("6 - Calcular perímetro do circulo\n");
+        printf("7 - Calcular perímetro do retângulo\n");
+        printf("8 - Calcular perímetro do triângulo\n");
+        printf("9 - Calcular perímetro do octagono\n");
+        printf("10 - Calcular quadrado de um número\n");
+        printf("11 - Calcular cubo de um número\n");
+        printf("12 - Calcular potência de um número\n");
+        printf("13 - Multiplicacão de 2 números\n");
+        printf("14 - Soma de 2 números\n");
         printf("15 - Sair\n");
         scanf("%i", &op);
         switch(op){
@@ -113,14 +140,14 @@ int main()
 
                     break;
             case 13:
-
+                    calculoMulti();
                     break;
             case 14:
 
                     break;
             default:
 
-                    printf("Insira um valor v�lido entre 1 e 15\n");
+                    printf("Insira um valor válido entre 1 e 15\n");
         }
     }while(op!=15);
 
