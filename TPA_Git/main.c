@@ -18,7 +18,6 @@ float calcularQuadradoNum(float num1, float num2)
 
 void calculoMulti();
 
-<<<<<<< HEAD
 void areaEsfera(){ //CASE 5
 
     float raio, area;
@@ -32,27 +31,8 @@ void areaEsfera(){ //CASE 5
             printf("\nO valor do raio nao pode ser igual ou inferior a 0.");
 
     }while(raio <=0);
-
-=======
-void areaEsfera(){ //CASE 5
-
-    float raio, area;
-
-    do {
-
-        printf("Digite valor do raio: ");
-        scanf("%f", &raio);
-
-        if(raio <=0)
-            printf("\nO valor do raio nao pode ser igual ou inferior a 0.");
-
-    }while(raio <=0);
-
-
-    area = 4*PI*raio;
-
-    printf("\nArea da esfera : %.2f", area);
 }
+
 float potencia(float value, float power){
     return pow(value,power);
 }
@@ -191,17 +171,8 @@ int main(){
                         break;
                     case 3:
                         calcularAreaRetangulo();
-
-<<<<<<< HEAD
-                        printf("a Area do Triangulo é: %f",op);
-                }
-                    break;
-            case 5:
-                    areaEsfera();
-=======
                         break;
                     case 4:
->>>>>>> 0849a068bd3984682e9776b1f933915fe0a7c684
 
                         break;
                     case 5:
@@ -215,7 +186,7 @@ int main(){
 
                         break;
                     case 8:
-
+                        perimetroTriangulo();
                         break;
                     case 9:
 
