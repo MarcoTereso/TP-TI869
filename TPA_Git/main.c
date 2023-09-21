@@ -21,8 +21,17 @@ void area_quadrado()
     printf("A Area do quadrado de lado %.2f = %.2f",valor,area);
 }
 
+float calcularQuadradoNum(float num1, float num2)
+{
+    printf("Insira o primeiro n�mero: ");
+    scanf("%f", &num1);
+    printf("Insira o segundo n�mero: ");
+    scanf("%f", &num2);
+    float quadrado = num1 * num2;
+    printf("O quadrado de %.2f * %.2f = %.2f\n", num1, num2, quadrado);
+    return quadrado;
+}
 void calculoMulti();
-
 
 void areaEsfera(){
 
@@ -36,6 +45,7 @@ void areaEsfera(){
 
     printf("\nArea da esfera : %.2f", raio);
 }
+
 void areaCirculo(){
     float r;
     do {
@@ -88,6 +98,31 @@ void potencia()
         printf("Entrada inválida!");
     else
         printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
+}
+
+void perimetroTriangulo()
+{
+    int verifica;
+    float b, l1, l2;
+    printf("Insira a base: ");
+    do
+    {
+        fflush(stdin);
+        verifica=scanf("%f", &b);
+    }while(verifica!=1 || b<=0);
+    printf("Insira o primeiro lado: ");
+    do
+    {
+        fflush(stdin);
+        verifica=scanf("%f", &l1);
+    }while(verifica!=1 || l1<=0);
+    printf("Insira o segundo lado: ");
+    do
+    {
+        fflush(stdin);
+        verifica=scanf("%f", &l2);
+    }while(verifica!=1 || l2<=0);
+    printf("Per�metro do tri�ngulo � %f",(b+l1+l2));
 }
 
 int main()
@@ -143,7 +178,7 @@ int main()
 
                     break;
             case 10:
-
+                    calcularQuadradoNum(v1,v2);
                     break;
             case 11:
 
@@ -153,6 +188,7 @@ int main()
                     break;
             case 13:
                     calculoMulti();
+
                     break;
             case 14:
 
@@ -161,7 +197,6 @@ int main()
                     printf("Insira um valor v�lido entre 1 e 15\n");
         }
     }while(op!=15);
-
 }
 
 
@@ -186,5 +221,4 @@ void calculoMulti(){
     multi = v1*v2;
 
     printf("Resultado: %.2f",multi);
-
 }

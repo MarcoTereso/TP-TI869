@@ -2,11 +2,21 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="-3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="684" topLine="6" />
+=======
+	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+=======
 	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
 		<Cursor>
 <<<<<<< HEAD
 			<Cursor1 position="3171" topLine="125" />
 =======
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 			<Cursor1 position="62" topLine="0" />
 >>>>>>> eaa78467be1cb6caf88c7cda92e1a3855c14f9f2
 		</Cursor>
