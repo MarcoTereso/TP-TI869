@@ -11,7 +11,7 @@ void area_quadrado()
     float area;
     int verifica;
     do
-    {    
+    {
         fflush(stdin);
         printf("Digite o valor do lado: ");
         //verificacao
