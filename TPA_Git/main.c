@@ -33,17 +33,24 @@ float calcularQuadradoNum(float num1, float num2)
 }
 void calculoMulti();
 
-void areaEsfera(){
+void areaEsfera(){ //CASE 5
 
     float raio, area;
 
+    do {
 
-    printf("Digite valor do raio: ");
-    scanf("%f", &raio);
+        printf("Digite valor do raio: ");
+        scanf("%f", &raio);
+
+        if(raio <=0)
+            printf("\nO valor do raio nao pode ser igual ou inferior a 0.");
+
+    }while(raio <=0);
+
 
     area = 4*PI*raio;
 
-    printf("\nArea da esfera : %.2f", raio);
+    printf("\nArea da esfera : %.2f", area);
 }
 
 void areaCirculo(){
@@ -163,6 +170,7 @@ int main()
                 }
                     break;
             case 5:
+                    areaEsfera();
 
                     break;
             case 6:
