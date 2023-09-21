@@ -4,10 +4,10 @@
 
 #define PI 3.1415
 
-<<<<<<< HEAD void areaEsfera() == == == =
+void areaEsfera()
 
 
-<<<<<<< HEAD
+
     float
     calcularQuadradoNum(float num1, float num2)
 {
@@ -20,15 +20,8 @@
     return quadrado;
 }
 
-== == == =
-<<<<<<< HEAD
-             == == == =
->>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
                           void calculoMulti();
 
-
-
->>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 void areaEsfera()
 {
 
@@ -42,10 +35,7 @@ void areaEsfera()
     printf("\nArea da esfera : %.2f", raio);
 }
 
-<<<<<<< HEAD
-== == == =
 
->>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
              void areaCirculo()
 {
     float r;
@@ -62,7 +52,7 @@ void areaEsfera()
 }
 
 int areaTriangulo()
->>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
+
 {
 
     void calculoMulti();
@@ -80,10 +70,10 @@ int areaTriangulo()
         printf("\nArea da esfera : %.2f", raio);
     }
 
-<<<<<<< HEAD
+
     void areaCirculo()
     {
-        == == == =
+
                      void potencia()
         {
             float value;
@@ -97,7 +87,7 @@ int areaTriangulo()
             else
                 printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
         }
-<<<<<<< HEAD
+
 
         void perimetroTriangulo()
         {
@@ -134,9 +124,7 @@ int areaTriangulo()
             float area = (a * b);
             printf("Area = %.1f\n", area);
         }
-        == == == =
->>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
->>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
+
 
                      void areaCirculo()
         {
