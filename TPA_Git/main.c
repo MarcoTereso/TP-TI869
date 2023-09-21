@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 #define PI 3.1415
 
 
@@ -17,7 +18,7 @@ void areaEsfera(){
     area = 4*PI*raio;
 
     printf("\nArea da esfera : %.2f", raio);
-
+}
 
 void areaCirculo(){
     float r;
@@ -32,17 +33,6 @@ void areaCirculo(){
 }
 
 
-int areaTriangulo()
-{
-    float b, a, op;
-   printf("\nInsira o valor da base:\n");
-   scanf("%f", &b);
-   printf("\nInsira o valor do altura:\n");
-   scanf ("%f",&a) ;
-   op=(b*a)/2;
-
-    return op;
-}
 
 
 
@@ -82,7 +72,17 @@ int main()
 
                     break;
             case 4:
+                void areaTriangulo();
+                {
+                float b, a, op;
+                printf("\nInsira o valor da base:\n");
+                scanf("%f", &b);
+                printf("\nInsira o valor do altura:\n");
+                scanf ("%f",&a) ;
+                op=(b*a)/2;
 
+                        printf("a Area do Triangulo é: %f",op);
+                }
                     break;
             case 5:
 
