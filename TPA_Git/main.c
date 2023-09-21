@@ -5,6 +5,19 @@
 
 #define PI 3.1415
 
+void perimetroOctagono() {
+
+    float lado;
+
+    printf("Digite o comprimento do lado do octogono: ");
+    scanf("%f", &lado);
+
+    float perimetro = 8 * lado;
+
+    printf("O perímetro do octogono com lados de comprimento %.3f e: %.3f\n", lado, perimetro);
+
+}
+
 void perimetroRetangulo()
 {
     float v1, v2, perimetro;
@@ -204,7 +217,7 @@ int main()
             perimetroTriangulo();
             break;
         case 9:
-
+             perimetroOctagono();
             break;
 
         case 10:
