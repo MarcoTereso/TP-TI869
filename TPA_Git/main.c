@@ -33,10 +33,6 @@ void areaEsfera(){ //CASE 5
     }while(raio <=0);
 }
 
-float potencia(float value, float power){
-    return pow(value,power);
-}
-
 void areaCirculo(){
     float r;
     do
@@ -50,20 +46,17 @@ void areaCirculo(){
     } while (r <= 0);
     printf(" A área do círculo é %.2f\n", PI * r * r);
 }
-/*
 void potencia(){
-            float value;
-            int power;
+            float value, power;
             printf("Valor: ");
             scanf("%f", &value);
             printf("Potência: ");
-            scanf("%d", &power);
+            scanf("%f", &power);
             if (value == 0 && power == -1)
-                printf("Entrada inválida!");
+                printf("Entrada inválida!\n");
             else
-                printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
+                printf("%.6f ^ %.2f = %.6f\n", value, power, pow(value, power));
 }
-*/
 
 void perimetroTriangulo(){
             int verifica;
@@ -117,22 +110,6 @@ void perimetroCirculo(){
             scanf("%f", &raio);
             per = 2 * PI * raio;
             printf("O perímetro do círculo é %.2f\n", per);
-}
-
-
-
-float math_pow(float value, int power){
-            if (power < 0)
-                return 1.0f / math_pow(value, -power);
-            else if (power == 0)
-                return 1;
-            else
-            {
-                float res = value;
-                while (--power)
-                    res *= value;
-                return res;
-            }
 }
 
 int main(){
@@ -201,7 +178,7 @@ int main(){
 
                         break;
                     case 12:
-
+                        potencia();
                         break;
 
 
