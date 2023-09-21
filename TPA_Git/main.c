@@ -8,7 +8,8 @@
 
 
 <<<<<<< HEAD
-                                 float calcularQuadradoNum(float num1, float num2)
+    float
+    calcularQuadradoNum(float num1, float num2)
 {
     printf("Insira o primeiro n�mero: ");
     scanf("%f", &num1);
@@ -122,6 +123,17 @@ int areaTriangulo()
             } while (verifica != 1 || l2 <= 0);
             printf("Per�metro do tri�ngulo � %f", (b + l1 + l2));
         }
+
+        void calcularAreaRetangulo()
+        {
+            float a, b;
+            printf("\nDigite o primeiro valor: ");
+            scanf("%f", &a);
+            printf("\nDigite o segundo valor: ");
+            scanf("%f", &b);
+            float area = (a * b);
+            printf("Area = %.1f\n", area);
+        }
         == == == =
 >>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 >>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
@@ -213,21 +225,20 @@ int areaTriangulo()
             do
             {
                 printf(">>>> MENU TRIGONOMETRIA <<<<\n");
-                printf("1 - Calcular área do circulo\n");
-                printf("2 - Calcular área do quadrado\n");
-                printf("3 - Calcular área do retângulo\n");
-                printf("4 - Calcular área do triângulo\n");
-                printf("5 - Calcular área da esfera\n");
-                printf("6 - Calcular perímetro do circulo\n");
-                printf("7 - Calcular perímetro do retângulo\n");
-                printf("8 - Calcular perímetro do triângulo\n");
-                printf("9 - Calcular perímetro do octagono\n");
-                printf("10 - Calcular quadrado de um número\n");
-                printf("11 - Calcular cubo de um número\n");
-                printf("12 - Calcular potência de um número\n");
-                printf("13 - Multiplicacão de 2 números\n");
-                printf("14 - Soma de 2 números\n");
-                printf("15 - Sair\n");
+                printf("1 - Calcular �rea do circulo\n");
+                printf("2 - Calcular �rea do quadrado\n");
+                printf("3 - Calcular �rea do ret�ngulo\n");
+                printf("4 - Calcular �rea do tri�ngulo\n");
+                printf("5 - Calcular �rea da esfera\n");
+                printf("6 - Calcular per�metro do circulo\n");
+                printf("7 - Calcular per�metro do ret�ngulo\n");
+                printf("8 - Calcular per�metro do tri�ngulo\n");
+                printf("9 - Calcular per�metro do octagono\n");
+                printf("10 - Calcular quadrado de um n�mero\n");
+                printf("11 - Calcular cubo de um n�mero\n");
+                printf("12 - Calcular pot�ncia de um n�mero\n");
+                printf("13 - Multiplica��o de 2 n�meros\n");
+                printf("14 - Soma de 2 n�meros\n");
                 scanf("%i", &op);
                 switch (op)
                 {
@@ -235,100 +246,103 @@ int areaTriangulo()
                     break;
                 case 1:
 
-                    break;
-                case 2:
+                    switch (op)
+                    {
+                    case 15:
+                        break;
+                    case 1:
+                        areaCirculo();
 
-                    break;
-                case 3:
+                        break;
+                    case 2:
 
-                    break;
-                case 4:
+                        break;
+                    case 3:
+                        calcularAreaRetangulo();
 
-                    break;
-                case 5:
+                        break;
+                    case 4:
 
-                    break;
-                case 6:
+                        break;
+                    case 5:
 
-                    break;
-                case 7:
+                        break;
+                    case 6:
 
-                    break;
-                case 8:
+                        break;
+                    case 7:
 
-                    break;
-                case 9:
+                        ;
+                        break;
+                    case 8:
 
-                    break;
-                case 10:
+                        break;
+                    case 9:
 
-                case 10:
-                    calcularQuadradoNum(v1, v2);
+                        break;
+                    case 10:
 
-                    break;
-                case 11:
+                    case 10:
+                        calcularQuadradoNum(v1, v2);
 
-                    break;
-                case 12:
+                        break;
+                    case 11:
 
-                    break;
-                case 13:
+                        break;
+                    case 12:
 
-                    break;
+                        break;
+                    case 13:
 
-                case 14:
+                        break;
 
-                    break;
-                case 13:
+                    case 14:
 
-                case 13:
+                        break;
+                    case 13:
 
-                    calculoMulti();
+                    case 13:
 
-                    break;
-                case 14:
+                        calculoMulti();
 
-                    break;
-                default:
+                        break;
+                    case 14:
 
-                    printf("Insira um valor v�lido entre 1 e 15\n");
-                    == == == =
-                                 printf("Insira um valor válido entre 1 e 15\n");
+                        break;
+                    default:
+                        printf("Insira um valor v�lido entre 1 e 15\n");
+                    }
                 }
-            } while (op != 15);
+                while (op != 15)
+                    ;
+            }
+
+            void calculoMulti()
+            {
+            }
+
+            float v1, v2, multi;
+            int dec;
+
+            do
+            {
+
+                fflush(stdin);
+                printf("Insira o 1� valor: ");
+                dec = scanf("%f", &v1);
+            } while (dec != 1 || v1 <= 0);
+            do
+            {
+                fflush(stdin);
+                printf("Insira o 2� valor: ");
+                dec = scanf("%f", &v2);
+
+            } while (v2 <= 0 || dec != 1);
+
+            multi = v1 * v2;
+
+            printf("Resultado: %.2f", multi);
         }
 
-        void calculoMulti()
-        {
-        }
-
-        float v1, v2, multi;
-        int dec;
-
-        do
-        {
-
-            fflush(stdin);
-            printf("Insira o 1� valor: ");
-            dec = scanf("%f", &v1);
-        } while (dec != 1 || v1 <= 0);
-        do
-        {
-            fflush(stdin);
-            printf("Insira o 2� valor: ");
-            dec = scanf("%f", &v2);
-
-        } while (v2 <= 0 || dec != 1);
-
-        multi = v1 * v2;
-
-        printf("Resultado: %.2f", multi);
+        return 0;
     }
-}
-while (v2 <= 0 || dec != 1)
-    ;
-
-multi = v1 * v2;
-
-printf("Resultado: %.2f", multi);
-}
