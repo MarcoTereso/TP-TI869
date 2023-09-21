@@ -150,11 +150,18 @@ int main()
         printf("13 - Multiplica��o de 2 n�meros\n");
         printf("14 - Soma de 2 n�meros\n");
         scanf("%i", &op);
+<<<<<<< HEAD
         switch (op)
         {
         case 15:
             break;
         case 1:
+=======
+        switch(op){
+            case 15: break;
+            case 1:
+                areaCirculo();
+>>>>>>> 7c636128544ad4a53287f41bed5747c955a8fe6c
 
             break;
         case 2:
