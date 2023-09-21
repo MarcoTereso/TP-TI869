@@ -1,5 +1,13 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
 1695223421 source:c:\users\abarbosa\desktop\gitstor\tp-ti869\tpa_git\main.c
+=======
+<<<<<<< HEAD
+1695224302 source:c:\users\pcoutinho\desktop\trabalhogit\tp-ti869\tpa_git\main.c
+=======
+1695223421 source:c:\users\abarbosa\desktop\gitstor\tp-ti869\tpa_git\main.c
+>>>>>>> f1fdb82602aec4a8e69c7f0dd36fe8a0cbf0fdf1
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 	<stdio.h>
 	<stdlib.h>
 
