@@ -21,6 +21,21 @@ void area_quadrado()
     printf("A Area do quadrado de lado %.2f = %.2f",valor,area);
 }
 
+void calculoMulti();
+
+
+void areaEsfera(){
+
+    float raio, area;
+
+
+    printf("Digite valor do raio: ");
+    scanf("%f", &raio);
+
+    area = 4*PI*raio;
+
+    printf("\nArea da esfera : %.2f", raio);
+}
 void areaCirculo(){
     float r;
     do {
@@ -30,9 +45,50 @@ void areaCirculo(){
             printf("O raio deve ser maior que 0. Tenta outravez amigo!.\n");
         }
     } while (r <= 0);
-    printf(" A �rea do c�rculo � %.2f\n", PI*r*r);
+    printf(" A área do círculo é %.2f\n", PI*r*r);
+
 }
 
+
+int areaTriangulo()
+{
+    float b, a, op;
+   printf("\nInsira o valor da base:\n");
+   scanf("%f", &b);
+   printf("\nInsira o valor do altura:\n");
+   scanf ("%f",&a) ;
+   op=(b*a)/2;
+
+    return op;
+}
+
+float math_pow(float value, int power)
+{
+    if (power < 0)
+        return 1.0f / math_pow(value, -power);
+    else if (power == 0)
+        return 1;
+    else
+    {
+        float res = value;
+        while (--power) res *= value;
+        return res;
+    }
+}
+
+void potencia()
+{
+    float value;
+    int power;
+    printf("Valor: ");
+    scanf("%f", &value);
+    printf("Potência: ");
+    scanf("%d", &power);
+    if (value == 0 && power == -1)
+        printf("Entrada inválida!");
+    else
+        printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
+}
 
 int main()
 {
@@ -56,7 +112,6 @@ int main()
         printf("12 - Calcular pot�ncia de um n�mero\n");
         printf("13 - Multiplica��o de 2 n�meros\n");
         printf("14 - Soma de 2 n�meros\n");
-        printf("15 - Sair\n");
         scanf("%i", &op);
         switch(op){
             case 15: break;
@@ -64,7 +119,7 @@ int main()
 
                     break;
             case 2:
-
+                area_quadrado();
                     break;
             case 3:
 
@@ -97,15 +152,39 @@ int main()
 
                     break;
             case 13:
-
+                    calculoMulti();
                     break;
             case 14:
 
                     break;
             default:
-
                     printf("Insira um valor v�lido entre 1 e 15\n");
         }
     }while(op!=15);
+
+}
+
+
+void calculoMulti(){
+
+    float v1,v2,multi;
+    int dec;
+
+    do{
+
+    fflush(stdin);
+    printf("Insira o 1� valor: ");
+    dec = scanf("%f", &v1);
+    }while(dec != 1 || v1 <= 0);
+    do{
+    fflush(stdin);
+    printf("Insira o 2� valor: ");
+    dec = scanf("%f", &v2);
+
+    }while(v2 <= 0 || dec != 1);
+
+    multi = v1*v2;
+
+    printf("Resultado: %.2f",multi);
 
 }
