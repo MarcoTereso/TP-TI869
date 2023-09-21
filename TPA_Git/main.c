@@ -6,13 +6,10 @@
 
 
 
-<<<<<<< HEAD
-=======
 void calculoMulti();
 
 
 
->>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 void areaEsfera(){
 
     float raio, area;
@@ -26,10 +23,7 @@ void areaEsfera(){
     printf("\nArea da esfera : %.2f", raio);
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 void areaCirculo(){
     float r;
     do {
@@ -71,7 +65,6 @@ void potencia()
     else
         printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
 }
-<<<<<<< HEAD
 
 void perimetroTriangulo()
 {
@@ -97,8 +90,6 @@ void perimetroTriangulo()
     }while(verifica!=1 || l2<=0);
     printf("Per�metro do tri�ngulo � %f",(b+l1+l2));
 }
-=======
->>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 
 int main()
 {
@@ -173,11 +164,8 @@ int main()
 
                     break;
             case 13:
-<<<<<<< HEAD
 
-=======
                     calculoMulti();
->>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
                     break;
             case 14:
 
@@ -188,8 +176,6 @@ int main()
         }
     }while(op!=15);
 
-<<<<<<< HEAD
-=======
 }
 
 
@@ -215,5 +201,4 @@ void calculoMulti(){
 
     printf("Resultado: %.2f",multi);
 
->>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
 }
