@@ -5,6 +5,24 @@
 
 #define PI 3.1415
 
+void area_quadrado()
+{
+    float valor;
+    float area;
+    int verifica;
+    do
+    {    
+        fflush(stdin);
+        printf("Digite o valor do lado: ");
+        //verificacao
+        verifica = scanf("%f",&valor);
+        system("cls");
+
+    }   while((verifica) = 1 && valor <=0 );// ou while((verifica) != 1 || valor <=0 )
+        area=valor*valor;
+    printf("A Area do quadrado de lado %.2f = %.2f",valor,area);
+}
+
 void perimetroOctagono() {
 
     float lado;
@@ -196,7 +214,7 @@ int main()
 
             break;
         case 2:
-
+            area_quadrado();
             break;
         case 3:
             calcularAreaRetangulo();
