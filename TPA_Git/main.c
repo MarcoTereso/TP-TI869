@@ -44,7 +44,33 @@ int areaTriangulo()
     return op;
 }
 
+float math_pow(float value, int power)
+{
+    if (power < 0)
+        return 1.0f / math_pow(value, -power);
+    else if (power == 0)
+        return 1;
+    else
+    {
+        float res = value;
+        while (--power) res *= value;
+        return res;
+    }
+}
 
+void potencia()
+{
+    float value;
+    int power;
+    printf("Valor: ");
+    scanf("%f", &value);
+    printf("Potência: ");
+    scanf("%d", &power);
+    if (value == 0 && power == -1)
+        printf("Entrada inválida!");
+    else
+        printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
+}
 
 int main()
 {
