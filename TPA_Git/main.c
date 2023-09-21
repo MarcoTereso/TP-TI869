@@ -97,7 +97,7 @@ void potencia()
     if (value == 0 && power == -1)
         printf("Entrada inválida!\n");
     else
-        printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
+        printf("%.6f ^ %d = %.6f\n", value, power, math_pow(value, power));
 }
 
 void perimetroTriangulo()
