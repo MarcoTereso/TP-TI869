@@ -4,7 +4,23 @@
 
 
 
+
 void calculoMulti();
+
+
+
+void areaEsfera(){
+
+    float raio, area;
+
+
+    printf("Digite valor do raio: ");
+    scanf("%f", &raio);
+
+    area = 4*PI*raio;
+
+    printf("\nArea da esfera : %.2f", raio);
+
 
 
 void areaCirculo(){
