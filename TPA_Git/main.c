@@ -181,6 +181,19 @@ void perimetroCirculo()
     printf("O perímetro do círculo é %.2f\n", per);
 }
 
+void calcularSomaNum()
+{
+    float num, num1;
+    printf("Insira o número para somar: ");
+    scanf("%f", &num);
+       printf("Insira outro número para somar: ");
+    scanf("%f", &num1);
+    float soma = num + num1;
+    printf("A soma é de é %.2f\n", soma);
+
+}
+
+
 int main()
 {
 
@@ -255,7 +268,7 @@ int main()
 
             break;
         case 14:
-
+ calcularSomaNum();
             break;
         default:
             printf("Insira um valor v�lido entre 1 e 15\n");
