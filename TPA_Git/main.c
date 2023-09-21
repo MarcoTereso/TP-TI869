@@ -1,15 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <math.h>
 
 #define PI 3.1415
 
-void areaEsfera()
-
-
-
-    float
-    calcularQuadradoNum(float num1, float num2)
+float calcularQuadradoNum(float num1, float num2)
 {
     printf("Insira o primeiro n�mero: ");
     scanf("%f", &num1);
@@ -20,7 +16,7 @@ void areaEsfera()
     return quadrado;
 }
 
-                          void calculoMulti();
+void calculoMulti();
 
 void areaEsfera()
 {
@@ -34,10 +30,11 @@ void areaEsfera()
 
     printf("\nArea da esfera : %.2f", raio);
 }
+float potencia(float value, float power){
+    return pow(value,power);
+}
 
-
-             void areaCirculo()
-{
+void areaCirculo(){
     float r;
     do
     {
@@ -50,32 +47,8 @@ void areaEsfera()
     } while (r <= 0);
     printf(" A área do círculo é %.2f\n", PI * r * r);
 }
-
-int areaTriangulo()
-
-{
-
-    void calculoMulti();
-
-    void areaEsfera()
-    {
-
-        float raio, area;
-
-        printf("Digite valor do raio: ");
-        scanf("%f", &raio);
-
-        area = 4 * PI * raio;
-
-        printf("\nArea da esfera : %.2f", raio);
-    }
-
-
-    void areaCirculo()
-    {
-
-                     void potencia()
-        {
+/*
+void potencia(){
             float value;
             int power;
             printf("Valor: ");
@@ -86,11 +59,10 @@ int areaTriangulo()
                 printf("Entrada inválida!");
             else
                 printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
-        }
+}
+*/
 
-
-        void perimetroTriangulo()
-        {
+void perimetroTriangulo(){
             int verifica;
             float b, l1, l2;
             printf("Insira a base: ");
@@ -112,10 +84,9 @@ int areaTriangulo()
                 verifica = scanf("%f", &l2);
             } while (verifica != 1 || l2 <= 0);
             printf("Per�metro do tri�ngulo � %f", (b + l1 + l2));
-        }
+}
 
-        void calcularAreaRetangulo()
-        {
+void calcularAreaRetangulo(){
             float a, b;
             printf("\nDigite o primeiro valor: ");
             scanf("%f", &a);
@@ -123,60 +94,31 @@ int areaTriangulo()
             scanf("%f", &b);
             float area = (a * b);
             printf("Area = %.1f\n", area);
-        }
+}
 
 
-                     void areaCirculo()
-        {
-            float r;
-            do
-            {
-                printf("Insira o raio (deve ser maior que 0): ");
-                scanf("%f", &r);
-                if (r <= 0)
-                {
-                    printf("O raio deve ser maior que 0. Tenta outravez amigo!.\n");
-                }
-            } while (r <= 0);
-            printf(" A �rea do c�rculo � %.2f\n", PI * r * r);
-            printf(" A área do círculo é %.2f\n", PI * r * r);
-        }
 
-        int areaTriangulo()
-        {
+void areaTriangulo(){
             float b, a, op;
             printf("\nInsira o valor da base:\n");
             scanf("%f", &b);
             printf("\nInsira o valor do altura:\n");
             scanf("%f", &a);
             op = (b * a) / 2;
+}
 
-            return op;
-        }
 
-        int areaTriangulo()
-        {
-            float b, a, op;
-            printf("\nInsira o valor da base:\n");
-            scanf("%f", &b);
-            printf("\nInsira o valor do altura:\n");
-            scanf("%f", &a);
-            op = (b * a) / 2;
-
-            return op;
-        }
-
-        void perimetroCirculo()
-        {
+void perimetroCirculo(){
             float raio, per;
             printf("Digite o valor do Raio:  ");
             scanf("%f", &raio);
             per = 2 * PI * raio;
             printf("O perímetro do círculo é %.2f\n", per);
-        }
+}
 
-        float math_pow(float value, int power)
-        {
+
+
+float math_pow(float value, int power){
             if (power < 0)
                 return 1.0f / math_pow(value, -power);
             else if (power == 0)
@@ -188,24 +130,9 @@ int areaTriangulo()
                     res *= value;
                 return res;
             }
-        }
+}
 
-        void potencia()
-        {
-            float value;
-            int power;
-            printf("Valor: ");
-            scanf("%f", &value);
-            printf("Potência: ");
-            scanf("%d", &power);
-            if (value == 0 && power == -1)
-                printf("Entrada inválida!");
-            else
-                printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
-        }
-
-        int main()
-        {
+int main(){
 
             float v1, v2, v3;
             int op;
@@ -228,12 +155,6 @@ int areaTriangulo()
                 printf("13 - Multiplica��o de 2 n�meros\n");
                 printf("14 - Soma de 2 n�meros\n");
                 scanf("%i", &op);
-                switch (op)
-                {
-                case 15:
-                    break;
-                case 1:
-
                     switch (op)
                     {
                     case 15:
@@ -260,7 +181,7 @@ int areaTriangulo()
                         break;
                     case 7:
 
-                        ;
+
                         break;
                     case 8:
 
@@ -268,7 +189,7 @@ int areaTriangulo()
                     case 9:
 
                         break;
-                    case 10:
+
 
                     case 10:
                         calcularQuadradoNum(v1, v2);
@@ -280,14 +201,9 @@ int areaTriangulo()
                     case 12:
 
                         break;
-                    case 13:
 
-                        break;
 
-                    case 14:
 
-                        break;
-                    case 13:
 
                     case 13:
 
@@ -300,14 +216,14 @@ int areaTriangulo()
                     default:
                         printf("Insira um valor v�lido entre 1 e 15\n");
                     }
-                }
-                while (op != 15)
-                    ;
+                }while (op != 15);
+                return 0;
             }
 
-            void calculoMulti()
-            {
-            }
+
+
+void calculoMulti(){
+
 
             float v1, v2, multi;
             int dec;
@@ -330,7 +246,5 @@ int areaTriangulo()
             multi = v1 * v2;
 
             printf("Resultado: %.2f", multi);
-        }
+}
 
-        return 0;
-    }
