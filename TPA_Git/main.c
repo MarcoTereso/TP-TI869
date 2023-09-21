@@ -4,7 +4,50 @@
 
 #define PI 3.1415
 
+<<<<<<< HEAD
 void areaEsfera()
+=======
+
+
+<<<<<<< HEAD
+=======
+void calculoMulti();
+
+
+
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
+void areaEsfera(){
+
+    float raio, area;
+
+
+    printf("Digite valor do raio: ");
+    scanf("%f", &raio);
+
+    area = 4*PI*raio;
+
+    printf("\nArea da esfera : %.2f", raio);
+}
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
+void areaCirculo(){
+    float r;
+    do {
+        printf("Insira o raio (deve ser maior que 0): ");
+        scanf("%f", &r);
+        if (r <= 0) {
+            printf("O raio deve ser maior que 0. Tenta outravez amigo!.\n");
+        }
+    } while (r <= 0);
+    printf(" A Ã¡rea do cÃ­rculo Ã© %.2f\n", PI*r*r);
+}
+
+
+int areaTriangulo()
+>>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
 {
 
     void calculoMulti();
@@ -22,8 +65,52 @@ void areaEsfera()
         printf("\nArea da esfera : %.2f", raio);
     }
 
+<<<<<<< HEAD
     void areaCirculo()
     {
+=======
+void potencia()
+{
+    float value;
+    int power;
+    printf("Valor: ");
+    scanf("%f", &value);
+    printf("PotÃªncia: ");
+    scanf("%d", &power);
+    if (value == 0 && power == -1)
+        printf("Entrada invÃ¡lida!");
+    else
+        printf("%.6f ^ %d = %.6f", value, power, math_pow(value, power));
+}
+<<<<<<< HEAD
+
+void perimetroTriangulo()
+{
+    int verifica;
+    float b, l1, l2;
+    printf("Insira a base: ");
+    do
+    {
+        fflush(stdin);
+        verifica=scanf("%f", &b);
+    }while(verifica!=1 || b<=0);
+    printf("Insira o primeiro lado: ");
+    do
+    {
+        fflush(stdin);
+        verifica=scanf("%f", &l1);
+    }while(verifica!=1 || l1<=0);
+    printf("Insira o segundo lado: ");
+    do
+    {
+        fflush(stdin);
+        verifica=scanf("%f", &l2);
+    }while(verifica!=1 || l2<=0);
+    printf("Perímetro do triângulo é %f",(b+l1+l2));
+}
+=======
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
+>>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
 
         void areaCirculo()
         {
@@ -172,11 +259,19 @@ void areaEsfera()
                 case 13:
 
                     break;
+<<<<<<< HEAD
                 case 14:
                     == == == =
                                  break;
                 case 13:
+=======
+            case 13:
+<<<<<<< HEAD
+
+=======
+>>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
                     calculoMulti();
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
                     break;
                 case 14:
 >>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
@@ -193,8 +288,14 @@ void areaEsfera()
             } while (op != 15);
         }
 
+<<<<<<< HEAD
         void calculoMulti()
         {
+=======
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
 
             float v1, v2, multi;
             int dec;
@@ -216,5 +317,16 @@ void areaEsfera()
 
             multi = v1 * v2;
 
+<<<<<<< HEAD
             printf("Resultado: %.2f", multi);
         }
+=======
+    }while(v2 <= 0 || dec != 1);
+
+    multi = v1*v2;
+
+    printf("Resultado: %.2f",multi);
+
+>>>>>>> 6321016f96abf0662a866cc7498405c79bef53e3
+}
+>>>>>>> 90cda3ab6b55aa0e76754fb7c379f4e1339dc16e
